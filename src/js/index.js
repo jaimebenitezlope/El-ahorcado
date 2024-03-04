@@ -1,8 +1,6 @@
 const gameContainer = document.getElementById('hangman-container');
 const letterInput = document.getElementById('letter-input');
-const hangmanImage = document
-	.getElementById('hangman-image')
-	.getElementsByTagName('img')[0];
+const hangmanImage = document.getElementById('hangman-image');
 const guessButton = document.getElementById('guess-btn');
 const restartButton = document.getElementById('restart-btn');
 const failLettersElement = document.getElementById('fail-letters');
@@ -152,8 +150,6 @@ letterInput.addEventListener('keydown', function (event) {
 		guessButton.click();
 	}
 });
-
-guessButton.addEventListener('click', guessLetter);
 
 guessButton.addEventListener('click', guessLetter);
 
