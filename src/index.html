@@ -5,13 +5,51 @@
 		<link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/base/normalize.css" />
-		<link rel="stylesheet" href="css/base/base.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Vite App</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Ahorcado</title>
+
+		<link
+			rel="icon"
+			href="./assets/images/cowboy-hat-icon-vector-11230963.ico"
+		/>
 	</head>
 	<body>
-		<h1>WEB WITH VITE</h1>
-		<!-- <img src="./assets/images/cute-cat.webp" alt="" /> -->
+		<div id="hangman-container" class="game-container">
+			<div class="words-inputs">
+				<p id="word-display">
+					<span id="letter-0">__</span>
+					<span id="letter-1">__</span>
+					<span id="letter-2">__</span>
+					<span id="letter-3">__</span>
+					<span id="letter-4">__</span>
+					<span id="letter-5">__</span>
+					<span id="letter-6">__</span>
+					<span id="letter-7">__</span>
+					<span id="letter-8">__</span>
+					<span id="letter-9">__</span>
+					<span id="letter-10">__</span>
+				</p>
+			</div>
+
+			<div id="hangman-image">
+				<img src="./assets/images/Hangman-0.png" alt="" />
+			</div>
+
+			<div class="fail-letters">
+				<div>
+					<input type="text" id="letter-input" maxlength="1" />
+				</div>
+
+				<div>
+					<p id="fail-letters"></p>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button class="button-adivinar" id="guess-btn">TRY</button>
+				<button id="restart-btn">RESTART</button>
+			</div>
+		</div>
 		<script type="module" src="./js/index.js"></script>
 	</body>
 </html>
