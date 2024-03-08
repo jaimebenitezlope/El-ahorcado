@@ -1,13 +1,5 @@
-import { words } from './const.js';
-
-import {
-	gameContainer,
-	letterInput,
-	hangmanImage,
-	guessButton,
-	restartButton,
-	failLettersElement
-} from './dom.js';
+import { guessButton, letterInput, restartButton } from './dom';
+import { guessLetter, initializeGame } from './functions';
 
 initializeGame();
 

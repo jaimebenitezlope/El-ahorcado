@@ -1,3 +1,12 @@
+import {
+	failLettersElement,
+	gameContainer,
+	guessButton,
+	hangmanImage,
+	letterInput
+} from './dom';
+import { words } from './const';
+
 const randomWords = [];
 let selectedWord;
 let incorrectGuesses = 0;
