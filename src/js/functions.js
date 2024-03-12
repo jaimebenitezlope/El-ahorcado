@@ -1,3 +1,4 @@
+import { words } from './const';
 import {
 	failLettersElement,
 	gameContainer,
@@ -5,7 +6,6 @@ import {
 	hangmanImage,
 	letterInput
 } from './dom';
-import { words } from './const';
 
 const randomWords = [];
 let selectedWord;

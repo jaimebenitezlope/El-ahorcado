@@ -15,4 +15,5 @@ const words = [
 	'VIAJERO',
 	'RANCHERO'
 ];
+
 export { words };

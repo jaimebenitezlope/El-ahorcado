@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="css/base/normalize.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 		<title>Ahorcado</title>
-
 		<link
 			rel="icon"
 			href="./assets/images/cowboy-hat-icon-vector-11230963.ico"
@@ -31,8 +30,8 @@
 				</p>
 			</div>
 
-			<div>
-				<img id="hangman-image" src="./assets/images/Hangman-0.png" alt="" />
+			<div id="hangman-image">
+				<img src="./assets/images/Hangman-0.png" alt="" />
 			</div>
 
 			<div class="fail-letters">
@@ -46,9 +45,11 @@
 			</div>
 
 			<div class="buttons">
+				<button class="button-adivinar" id="guess-btn">TRY</button>
 				<button id="restart-btn">RESTART</button>
 			</div>
 		</div>
+
 		<script type="module" src="./js/index.js"></script>
 	</body>
 </html>
