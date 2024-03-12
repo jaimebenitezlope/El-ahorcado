@@ -7,6 +7,24 @@ import {
 	letterInput
 } from './dom';
 
+import hangman0 from '../assets/images/Hangman-0.png';
+import hangman1 from '../assets/images/Hangman-1.png';
+import hangman2 from '../assets/images/Hangman-2.png';
+import hangman3 from '../assets/images/Hangman-3.png';
+import hangman4 from '../assets/images/Hangman-4.png';
+import hangman5 from '../assets/images/Hangman-5.png';
+import hangman6 from '../assets/images/Hangman-6.png';
+
+const hangmanImages = [
+	hangman0,
+	hangman1,
+	hangman2,
+	hangman3,
+	hangman4,
+	hangman5,
+	hangman6
+];
+
 const randomWords = [];
 let selectedWord;
 let incorrectGuesses = 0;
@@ -54,7 +72,7 @@ const handleCorrectGuess = letter => {
 
 const handleIncorrectGuess = letter => {
 	incorrectGuesses++;
-	hangmanImage.src = `./assets/images/Hangman-${incorrectGuesses}.png`;
+	hangmanImage.src = hangmanImages[incorrectGuesses];
 
 	failedLetters.push(letter);
 	updateFailedLettersDisplay();
